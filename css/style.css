@@ -1,10 +1,20 @@
-html {
-  font-size: 10px;
-  background: url("./background.jpg") bottom center;
-  background-size: cover;
+:root {
+  --base: red;
+  --spacing: 10px;
+  --blur: 50px;
 }
 
-body,
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
 html {
   margin: 0;
   padding: 0;
